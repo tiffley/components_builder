@@ -1,0 +1,16 @@
+{
+  "name": "mysql-connector",
+  "config": {
+    "connector.class": "io.debezium.connector.mysql.MySqlConnector",
+    "database.hostname": "mysql",
+    "database.port": "3306",
+    "database.user": "root",
+    "database.password": "rootpassword",
+    "database.server.id": "1",
+    "database.server.name": "db1",
+    "database.whitelist": "db1",
+    "table.whitelist": "db1.table1,db1.table2,db1.table3,db1.table4",
+    "database.history.kafka.bootstrap.servers": "kafka:9092",
+    "database.history.kafka.topic": "schema-changes.db1"
+  }
+}

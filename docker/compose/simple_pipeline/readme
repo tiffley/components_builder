@@ -1,11 +1,20 @@
 
+in case container is dead, check logs. may need some env var settings.
+docker-compose logs zookeeper
+
+
+
 -- step 1
+chmod +x download_connector.sh
 docker-compose up -d
 
 -- step 2
 mysql -h 127.0.0.1 -P 3306 -u root -p
 
 rootpassword
+
+-- step 3
+curl -X POST -H "Content-Type: application/json" --data @./con_config/src_deb.json http://localhost:8083/connectors
 
 
 

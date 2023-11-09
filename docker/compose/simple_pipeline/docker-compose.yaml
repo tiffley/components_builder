@@ -17,6 +17,9 @@ services:
     image: confluentinc/cp-zookeeper:latest
     ports:
       - "2181:2181"
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+
     networks:
       - mynetwork
 
@@ -29,8 +32,39 @@ services:
     environment:
       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
       KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
     networks:
       - mynetwork
+
+  kafka2:
+    image: confluentinc/cp-kafka:latest
+    depends_on:
+      - zookeeper
+    ports:
+      - "9093:9093"
+    environment:
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka2:9093
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
+      KAFKA_BROKER_ID: 2
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+    networks:
+      - mynetwork
+
+  kafka3:
+    image: confluentinc/cp-kafka:latest
+    depends_on:
+      - zookeeper
+    ports:
+      - "9094:9094"
+    environment:
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka3:9094
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
+      KAFKA_BROKER_ID: 3
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+    networks:
+      - mynetwork
+
 
   connect:
     image: confluentinc/cp-kafka-connect:latest
@@ -39,7 +73,7 @@ services:
     ports:
       - "8083:8083"
     environment:
-      CONNECT_BOOTSTRAP_SERVERS: kafka:9092
+      CONNECT_BOOTSTRAP_SERVERS: kafka:9092,kafka2:9093,kafka3:9094
       CONNECT_REST_PORT: 8083
       CONNECT_GROUP_ID: "1"
       CONNECT_CONFIG_STORAGE_TOPIC: "connect-configs"
@@ -50,8 +84,11 @@ services:
       CONNECT_INTERNAL_KEY_CONVERTER: "org.apache.kafka.connect.json.JsonConverter"
       CONNECT_INTERNAL_VALUE_CONVERTER: "org.apache.kafka.connect.json.JsonConverter"
       CONNECT_PLUGIN_PATH: "/usr/share/java,/usr/share/confluent-hub-components"
+      CONNECT_REST_ADVERTISED_HOST_NAME: connect
     volumes:
       - ./connectors:/usr/share/confluent-hub-components
+      - ./download_connector.sh:/usr/local/bin/download_connector.sh
+    command: bash -c "/usr/local/bin/download_connector.sh && /etc/confluent/docker/run"
     networks:
       - mynetwork
 
