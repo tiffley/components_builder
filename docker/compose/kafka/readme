@@ -1,3 +1,5 @@
+to see some kafka commands
+https://github.com/tiffley/study/tree/main/commands/kafka
 
 >> debug
 in case container is dead, check logs. may need some env var settings.
@@ -17,8 +19,18 @@ docker-compose up -d
 docker ps
 
 -- step 2
+> create connector and check
 curl -X POST -H "Content-Type: application/json" --data @./con_config/src_deb_another.json http://localhost:8083/connectors
 curl http://localhost:8083/connectors
+curl http://localhost:8083/connectors/mysql-connector/status
+
+-- step 3
+> check topics
+docker exec -it broker bash
+kafka-topics --bootstrap-server SASL_PLAINTEXT://localhost:9092 --list
+
+-- step 4
+update DB to see how things work
 
 
 -- mysql
@@ -29,6 +41,6 @@ pw
 http://localhost:8080
 
 
-reset
- docker compose down
+-- reset
+docker compose down
 docker volume prune
