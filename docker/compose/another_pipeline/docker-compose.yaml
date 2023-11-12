@@ -75,6 +75,18 @@ services:
     environment:
       SCHEMA_REGISTRY_KAFKASTORE_CONNECTION_URL: "zookeeper:2181"
 
+  kowl:
+    image: quay.io/cloudhut/kowl:latest
+    ports:
+     - "8080:8080"
+    environment:
+      KAFKA_BROKERS: "kafka1:9093,kafka2:9094,kafka3:9096"
+      KAFKA_USERNAME: ""
+      KAFKA_PASSWORD: ""
+      KAFKA_TLS_ENABLED: "false"
+      KAFKA_TRUSTSTORE_LOCATION: ""
+      KAFKA_TRUSTSTORE_PASSWORD: ""
+
   mysql:
     image: mysql:latest
     environment:
