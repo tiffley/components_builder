@@ -1,0 +1,34 @@
+
+>> debug
+in case container is dead, check logs. may need some env var settings.
+docker-compose logs zookeeper
+
+>> restart container
+if update yaml and want to restart a container
+docker-compose up -d --no-deps --build <service_name>
+
+>> mysql version
+mysql8 may need "database.allowPublicKeyRetrieval":"true", in connector
+if not the behavior is not stable, try lower versions like 5.7
+
+
+-- step 1
+docker-compose up -d
+docker ps
+
+-- step 2
+curl -X POST -H "Content-Type: application/json" --data @./con_config/src_deb_another.json http://localhost:8083/connectors
+curl http://localhost:8083/connectors
+
+
+-- mysql
+mysql -h 127.0.0.1 -P 3306 -u root -p
+pw
+
+-- kowl
+http://localhost:8080
+
+
+reset
+ docker compose down
+docker volume prune
