@@ -49,7 +49,7 @@ services:
      - /var/run/docker.sock:/var/run/docker.sock
 
   kafka-connect:
-    image: debezium/connect:1.8
+    image: debezium/connect:latest
     ports:
      - "8083:8083"
     environment:
@@ -67,6 +67,7 @@ services:
       INTERNAL_VALUE_CONVERTER: "org.apache.kafka.connect.json.JsonConverter"
       CONNECT_KEY_CONVERTER: "org.apache.kafka.connect.json.JsonConverter"
       CONNECT_VALUE_CONVERTER: "org.apache.kafka.connect.json.JsonConverter"
+      SCHEMA_REGISTRY_URL: "http://schema-registry:8081"
 
   schema-registry:
     image: confluentinc/cp-schema-registry:latest
@@ -74,6 +75,7 @@ services:
      - "8081:8081"
     environment:
       SCHEMA_REGISTRY_KAFKASTORE_CONNECTION_URL: "zookeeper:2181"
+      SCHEMA_REGISTRY_HOST_NAME: "schema-registry"
 
   kowl:
     image: quay.io/cloudhut/kowl:latest

@@ -1,6 +1,16 @@
 
+>> debug
 in case container is dead, check logs. may need some env var settings.
 docker-compose logs zookeeper
+
+>> restart container
+if update yaml and want to restart a container
+docker-compose up -d --no-deps --build <service_name>
+
+>> mysql version
+mysql8 may need "database.allowPublicKeyRetrieval":"true", in connector
+if not the behavior is not stable, try lower versions like 5.7
+
 
 -- step 1
 docker-compose up -d
