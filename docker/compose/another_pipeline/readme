@@ -1,0 +1,24 @@
+
+in case container is dead, check logs. may need some env var settings.
+docker-compose logs zookeeper
+
+-- step 1
+docker-compose up -d
+docker ps
+
+-- step 2
+curl -X POST -H "Content-Type: application/json" --data @./con_config/src_deb_another.json http://localhost:8083/connectors
+curl http://localhost:8083/connectors
+
+
+-- mysql
+mysql -h 127.0.0.1 -P 3306 -u root -p
+rootpassword
+
+-- kowl
+http://localhost:8080
+
+
+reset
+ docker compose down
+docker volume prune
