@@ -1,0 +1,49 @@
+to see some kafka commands
+https://github.com/tiffley/study/tree/main/commands/kafka
+
+>> debug
+in case container is dead, check logs. may need some env var settings.
+docker-compose logs zookeeper
+
+>> restart container
+if update yaml and want to restart a container
+docker-compose up -d --no-deps --build <service_name>
+
+>> mysql version
+mysql8 may need "database.allowPublicKeyRetrieval":"true", in connector
+if not the behavior is not stable, try lower versions like 5.7
+
+
+-- step 1
+docker-compose up -d
+docker ps
+
+-- step 2
+> create connector and check
+curl -X POST -H "Content-Type: application/json" --data @./con_config/src_deb_another.json http://localhost:8083/connectors
+curl -X POST -H "Content-Type: application/json" --data @./con_config/src_deb_another.json http://localhost:8084/connectors
+curl http://localhost:8083/connectors
+curl http://localhost:8084/connectors
+curl http://localhost:8083/connectors/mysql-connector/status
+
+-- step 3
+> check topics
+docker exec -it broker bash
+kafka-topics --bootstrap-server SASL_PLAINTEXT://localhost:9092 --list
+
+-- step 4
+update DB to see how things work
+
+
+-- mysql
+mysql -h 127.0.0.1 -P 3306 -u root -p
+pw
+
+-- kowl
+http://localhost:8080
+http://localhost:8089
+
+
+-- reset
+docker compose down
+docker volume prune
