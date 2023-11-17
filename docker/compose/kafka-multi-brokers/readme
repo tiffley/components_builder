@@ -24,12 +24,17 @@ curl -X POST -H "Content-Type: application/json" --data @./con_config/src_deb_an
 curl -X POST -H "Content-Type: application/json" --data @./con_config/src_deb_another.json http://localhost:8084/connectors
 curl http://localhost:8083/connectors
 curl http://localhost:8084/connectors
+curl http://localhost:8084/connector-plugins/
 curl http://localhost:8083/connectors/mysql-connector/status
 
 -- step 3
+> mirror src connector in dst cluster
+curl -X POST -H "Content-Type: application/json" --data @./con_config/mirror.json http://localhost:8084/connectors
+
 > check topics
 docker exec -it broker bash
 kafka-topics --bootstrap-server SASL_PLAINTEXT://localhost:9092 --list
+
 
 -- step 4
 update DB to see how things work
@@ -39,6 +44,11 @@ update DB to see how things work
 mysql -h 127.0.0.1 -P 3306 -u root -p
 pw
 
+
+INSERT INTO `table1` (`column1`, `column2`, `column3`, `column4`, `column5`)
+VALUES ('value1', 10, 100.50, '2023-11-17', 'Some text');
+
+
 -- kowl
 http://localhost:8080
 http://localhost:8089
@@ -47,3 +57,5 @@ http://localhost:8089
 -- reset
 docker compose down
 docker volume prune
+
+

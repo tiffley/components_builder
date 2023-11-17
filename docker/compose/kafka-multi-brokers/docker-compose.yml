@@ -110,9 +110,12 @@ services:
       CONNECT_OFFSET_STORAGE_REPLICATION_FACTOR: 1
       CONNECT_STATUS_STORAGE_TOPIC: docker-connect-status
       CONNECT_STATUS_STORAGE_REPLICATION_FACTOR: 1
-      CONNECT_KEY_CONVERTER: org.apache.kafka.connect.storage.StringConverter
+      CONNECT_KEY_CONVERTER: io.confluent.connect.avro.AvroConverter
+      CONNECT_KEY_CONVERTER_SCHEMA_REGISTRY_URL: http://schema-registry:8081
+      CONNECT_KEY_CONVERTER_SCHEMAS_ENABLE: "true"
       CONNECT_VALUE_CONVERTER: io.confluent.connect.avro.AvroConverter
       CONNECT_VALUE_CONVERTER_SCHEMA_REGISTRY_URL: http://schema-registry:8081
+      CONNECT_VALUE_CONVERTER_SCHEMAS_ENABLE: "true"
       CONNECT_PLUGIN_PATH: "/usr/share/java,/usr/share/confluent-hub-components"
       CLASSPATH: "/usr/local/share/kafka/plugins/*"
       CONNECT_LOG4J_LOGGERS: org.apache.zookeeper=ERROR,org.I0Itec.zkclient=ERROR,org.reflections=ERROR
@@ -139,12 +142,16 @@ services:
       CONNECT_OFFSET_STORAGE_REPLICATION_FACTOR: 1
       CONNECT_STATUS_STORAGE_TOPIC: docker-connect-status2
       CONNECT_STATUS_STORAGE_REPLICATION_FACTOR: 1
-      CONNECT_KEY_CONVERTER: org.apache.kafka.connect.storage.StringConverter
+      CONNECT_KEY_CONVERTER: io.confluent.connect.avro.AvroConverter
+      CONNECT_KEY_CONVERTER_SCHEMA_REGISTRY_URL: http://schema-registry2:8082
+      CONNECT_KEY_CONVERTER_SCHEMAS_ENABLE: "true"
+      CONNECT_VALUE_CONVERTER_SCHEMAS_ENABLE: "true"
       CONNECT_VALUE_CONVERTER: io.confluent.connect.avro.AvroConverter
       CONNECT_VALUE_CONVERTER_SCHEMA_REGISTRY_URL: http://schema-registry2:8082
       CONNECT_PLUGIN_PATH: "/usr/share/java,/usr/share/confluent-hub-components"
       CLASSPATH: "/usr/local/share/kafka/plugins/*"
       CONNECT_LOG4J_LOGGERS: org.apache.zookeeper=ERROR,org.I0Itec.zkclient=ERROR,org.reflections=ERROR
+      SCHEMA_REGISTRY_URL: 'http://schema-registry2:8082'
     volumes:
       - ./connector_plugins:/usr/local/share/kafka/plugins
 
@@ -203,6 +210,20 @@ services:
       STREAMS_SCHEMA_REGISTRY_PORT: 8081
 
 
+  redpanda:
+    image: redpandadata/redpanda
+    hostname: redpanda
+    container_name: redpanda
+    ports:
+      - "9099:9092"   # Kafka port mapping
+      - "9644:9644"   # Admin API port mapping
+    environment:
+      RPC_PORT: 33145
+      REDPANDA_ADVERTISED_KAFKA_PORT: 9092
+      REDPANDA_ADVERTISED_ADMIN_PORT: 9644
+      REDPANDA_ADVERTISED_RPC_PORT: 33145
+      REDPANDA_RPC_SERVER: '0.0.0.0:33145'
+      REDPANDA_LOG_LEVEL: "debug"
 
   kowl:
     image: quay.io/cloudhut/kowl:latest
@@ -229,6 +250,7 @@ services:
       KAFKA_BROKERS: 'broker2:29092'
       KAFKA_CONNECT: 'connect2:8083'
       KAFKA_CONNECT_REST_URL: 'http://connect2:8083'
+      KAFKA_SCHEMAREGISTRY_URLS: 'http://schema-registry2:8082'
 
 
   mysql:
