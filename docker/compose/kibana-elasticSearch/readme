@@ -1,0 +1,48 @@
+docker-compose logs zookeeper
+docker-compose up -d --no-deps --build <service_name>
+-- step 1
+docker-compose up -d
+
+-- step 2
+http://localhost:5601/app/management
+kibana > Create index pattern
+
+-- step 3
+http://localhost:5601/app/dashboards#/list?_g=(filters:!(),refreshInterval:(pause:!t,value:0),time:(from:now-15m,to:now))
+create dashboard
+
+Visualization Type: Vertical Bar Chart
+Vertical Axis: Aggregated sum of sales_amount
+Horizontal Axis: product_name
+
+
+how elasticsearch is used?
+curl -X GET "http://localhost:9200/_cluster/health"
+curl -X GET "http://localhost:9200/_cat/indices?v"
+curl -X GET "http://localhost:9200/mysql_data_index/_mapping"
+curl -X GET "http://localhost:9200/mysql_data_index/_search" -H "Content-Type: application/json" -d '{"query": {"match_all": {}}}'
+
+curl -X GET "http://localhost:9200/mysql_data_index/_search" -H "Content-Type: application/json" -d '{
+  "size": 0,
+  "aggs": {
+    "category_aggregation": {
+      "terms": {
+        "field": "category.keyword"
+      }
+    }
+  }
+}'
+
+
+-- mysql
+mysql -h 127.0.0.1 -P 3306 -u root -p
+pw
+
+INSERT INTO `table1` (`column1`, `column2`, `column3`, `column4`, `column5`)
+VALUES ('value1', 10, 100.50, '2023-11-17', 'Some text');
+
+-- reset
+docker compose down
+docker volume prune
+
+
