@@ -1,6 +1,9 @@
 to see some kafka commands
 https://github.com/tiffley/study/tree/main/commands/kafka
 
+connector download
+https://www.confluent.io/hub/
+
 >> debug
 in case container is dead, check logs. may need some env var settings.
 docker-compose logs zookeeper
