@@ -1,0 +1,23 @@
+{
+  "name": "mysql-jdbc-source",
+  "config": {
+    "connector.class": "io.confluent.connect.jdbc.JdbcSourceConnector",
+    "tasks.max": "1",
+    "connection.url": "jdbc:mysql://mysql:3306/db1",
+    "connection.user": "root",
+    "connection.password": "pw",
+    "mode": "incrementing",
+    "incrementing.column.name": "id",
+    "table.whitelist": "db1.table1",
+    "topic.prefix": "jdbc-db1-",
+    "validate.non.null": "false",
+    "transforms": "unwrap",
+    "transforms.unwrap.type": "io.debezium.transforms.ExtractNewRecordState",
+    "transforms.unwrap.drop.tombstones": "false",
+    "transforms.unwrap.delete.handling.mode": "rewrite",
+    "errors.log.enable": "true",
+    "errors.log.include.messages": "true",
+    "errors.deadletterqueue.topic.name": "dead-letter-queue",
+    "source.encoding": "UTF-8"
+  }
+}

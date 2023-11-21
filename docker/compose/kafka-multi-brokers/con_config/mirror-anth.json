@@ -1,0 +1,16 @@
+{
+    "name": "mirror-source-connector",
+    "config": {
+      "connector.class": "org.apache.kafka.connect.mirror.MirrorSourceConnector",
+      "tasks.max": "1",
+      "bootstrap.servers": "broker2:29092",
+      "group.id": "mirror-grp",
+      "key.converter.schema.registry.url": "http://schema-registry2:8082",
+      "value.converter.schema.registry.url": "http://schema-registry2:8082",
+      "topics": "db1..db1.table1",
+      "source.cluster.alias": "source",
+      "target.cluster.alias": "target",
+      "source.cluster.bootstrap.servers": "broker:29092",
+      "target.cluster.bootstrap.servers": "broker2:29092"
+    }
+  }
