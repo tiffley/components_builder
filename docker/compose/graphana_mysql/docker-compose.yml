@@ -1,0 +1,34 @@
+version: '3'
+
+services:
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - "3000:3000"
+    networks:
+      - grafana-net
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=pw # Change this to your desired password
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mysql:latest
+    restart: always
+    networks:
+      - grafana-net
+    environment:
+      MYSQL_ROOT_PASSWORD: pw
+      MYSQL_DATABASE: testdb
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./mysql-init-scripts:/docker-entrypoint-initdb.d
+
+volumes:
+  mysql-data:
+
+networks:
+  grafana-net:
+    driver: bridge
