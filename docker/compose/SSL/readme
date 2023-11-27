@@ -1,0 +1,45 @@
+docker-compose up -d
+docker compose down
+
+docker-compose logs server
+
+docker exec -it ssl_client_1 sh
+
+cd ssl
+openssl req -newkey rsa:2048 -nodes -keyout server.key -x509 -days 365 -out server.crt
+
+
+Country Name (2 letter code) [AU]:JP
+State or Province Name (full name) [Some-State]:TOKYO
+Locality Name (eg, city) []:SETAGAYA
+Organization Name (eg, company) [Internet Widgits Pty Ltd]:TAKA
+Organizational Unit Name (eg, section) []:
+Common Name (e.g. server FQDN or YOUR name) []:quentin
+Email Address []:
+
+
+local
+curl --cacert server.crt --key server.key --cert server.crt https://quentin:443
+container
+curl --cacert /ssl/server.crt --cert /ssl/server.crt --key /ssl/server.key https://server:443
+curl --cacert /ssl/server.crt --cert /ssl/server.crt --key /ssl/server.key https://quentin:443
+curl --cacert /ssl/server.crt --key /ssl/server.key https://quentin:443
+
+
+
+--cacert server.crt: SSL
+Specifies the CA certificate file (server.crt) that the client will use to verify the server's certificate during the SSL handshake.
+
+--cert server.crt: TLS
+Specifies the client certificate file (server.crt) that the client presents to the server for authentication if needed.
+This option is necessary if the server requires client authentication (mutual TLS).
+
+--key server.key:
+Specifies the private key file (server.key) associated with the client's certificate.
+This key is used for client authentication during the SSL handshake if required by the server.
+
+
+TLS can be seen as an evolution and improvement upon SSL,
+offering stronger security measures and modern cryptographic techniques to ensure secure communication over the internet.
+As such, it's recommended to use TLS instead of SSL for establishing secure connections between clients and servers.
+
