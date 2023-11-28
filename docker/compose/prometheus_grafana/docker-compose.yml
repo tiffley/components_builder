@@ -1,0 +1,59 @@
+version: '3'
+
+services:
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - "3000:3000"
+    networks:
+      - grafana-net
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=pw # Change this to your desired password
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mysql:latest
+    restart: always
+    networks:
+      - grafana-net
+    environment:
+      MYSQL_ROOT_PASSWORD: pw
+      MYSQL_DATABASE: testdb
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./mysql-init-scripts:/docker-entrypoint-initdb.d
+
+  mysqld-exporter:
+    image: prom/mysqld-exporter:v0.13.0
+    environment:
+      DATA_SOURCE_NAME: "root:pw@(mysql:3306)/"
+      EXPORTER_WEB_TELEMETRY_PATH: "/metrics"
+    ports:
+      - "9104:9104"
+    depends_on:
+      - mysql
+    networks:
+      - grafana-net
+
+  prometheus:
+    image: prom/prometheus:v2.30.0
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus:/etc/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+    depends_on:
+      - mysql
+    networks:
+      - grafana-net
+
+volumes:
+  mysql-data:
+
+networks:
+  grafana-net:
+    driver: bridge

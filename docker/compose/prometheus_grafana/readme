@@ -1,0 +1,26 @@
+docker-compose up -d
+docker-compose down
+docker-compose logs prometheus
+
+exporter gathers metrics such as query execution times, connections, locks, and other performance-related data.
+table update is not target.
+
+-- prometheus
+http://localhost:9090
+status > targets - check the connection
+promQL : mysql_global_status_commands_total
+graph is also generated
+
+-- grafana
+http://localhost:3000
+admin / pw
+add prometheus data
+Connection - http://prometheus:9090
+
+-- mysql
+mysql -h 127.0.0.1 -P 3306 -u root -p
+pw
+
+-- exporter
+http://localhost:9104/metrics
+ curl http://localhost:9104/metrics
