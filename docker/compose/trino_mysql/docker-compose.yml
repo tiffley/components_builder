@@ -1,0 +1,41 @@
+version: '3'
+
+services:
+  trino:
+    image: trinodb/trino:latest
+    container_name: trino-container
+    environment:
+      - TRINO_ENVIRONMENT_NODE_ENVIRONMENT=production
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mysql
+    links:
+      - mysql
+    networks:
+      - trino-net
+    volumes:
+      - ./mysql-connector-j-8.0.32.jar:/usr/lib/trino/plugin/mysql-connector-j-8.0.32.jar
+      - ./config.properties:/etc/trino/catalog/mysql.properties
+
+
+  mysql:
+    image: mysql:latest
+    restart: always
+    networks:
+      - trino-net
+    environment:
+      MYSQL_ROOT_PASSWORD: pw
+      MYSQL_DATABASE: testdb
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./mysql-init-scripts:/docker-entrypoint-initdb.d
+
+volumes:
+  mysql-data:
+
+networks:
+  trino-net:
+    driver: bridge
