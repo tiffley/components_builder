@@ -1,0 +1,60 @@
+docker-compose logs connect
+search >> INFO MirrorSourceConfig values:
+
+https://access.redhat.com/documentation/ja-jp/red_hat_amq_streams/2.3/html/configuring_amq_streams_on_openshift/assembly-mirrormaker-str
+
+-- step 1
+docker-compose up -d
+docker ps
+
+-- step 2
+> create connector and check
+curl -X POST -H "Content-Type: application/json" --data @./con_config/src_deb_another.json http://localhost:8083/connectors
+curl http://localhost:8083/connectors
+curl http://localhost:8084/connectors
+curl http://localhost:8084/connector-plugins
+curl http://localhost:8083/connectors/mysql-connector/status
+
+curl -X POST -H "Content-Type: application/json" --data @./con_config/mirror-anth.json http://localhost:8083/connectors
+curl http://localhost:8083/connectors/mirror-source-connector/status
+
+
+-- step 3
+> mirror src connector in dst cluster
+curl -X POST -H "Content-Type: application/json" --data @./con_config/mirror.json http://localhost:8084/connectors
+
+> check topics
+docker exec -it broker bash
+kafka-topics --bootstrap-server SASL_PLAINTEXT://localhost:9092 --list
+kafka-console-consumer --topic db1.db1.table1 --bootstrap-server SASL_PLAINTEXT://localhost:9092 --from-beginning
+
+
+-- step 4
+curl -X POST -H "Content-Type: application/json" --data @./con_config/sink.json http://localhost:8083/connectors
+curl http://localhost:8083/connectors/jdbc-sink-connector/status
+
+
+-- step 5
+update DB to see how things work
+
+
+-- mysql
+mysql -h 127.0.0.1 -P 3306 -u root -p
+pw
+
+
+INSERT INTO `table1` (`column1`, `column2`, `column3`, `column4`, `column5`)
+VALUES ('value1', 10, 100.50, '2023-11-17', 'Some text');
+
+
+-- kowl
+http://localhost:8080
+http://localhost:8089
+
+
+-- reset
+docker compose down
+docker volume prune
+
+curl -X DELETE http://localhost:8083/connectors/mirror-source-connector
+

@@ -1,0 +1,12 @@
+{
+    "name": "mirror-source-connector",
+    "config": {
+      "connector.class": "org.apache.kafka.connect.mirror.MirrorSourceConnector",
+      "tasks.max": "1",
+      "topics": "db1.db1.table1",
+      "source.cluster.alias": "source",
+      "target.cluster.alias": "target",
+      "source.cluster.bootstrap.servers": "broker:29092",
+      "target.cluster.bootstrap.servers": "broker2:29092"
+    }
+  }

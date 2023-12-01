@@ -1,0 +1,28 @@
+{
+    "name": "mirror-source-connector",
+    "config": {
+      "connector.class": "org.apache.kafka.connect.mirror.MirrorSourceConnector",
+      "tasks.max": "1",
+      "consumer.group.id": "mirror-grp",
+      "replication.factor": "1",
+      "producer.bootstrap.servers": "broker2:29092",
+      "consumer.bootstrap.servers": "broker2:29092",
+      "schema.registry.url": "http://schema-registry2:8082",
+      "key.converter.schema.registry.url": "http://schema-registry2:8082",
+      "value.converter.schema.registry.url": "http://schema-registry2:8082",
+      "refresh.topics.enabled": "false",
+      "sync.topic.acls.enabled": "false",
+      "sync.topic.configs.enabled": "false",
+      "errors.log.enable": "true",
+      "topics": "db1.db1.table1",
+      "source.cluster.alias": "",
+      "target.cluster.alias": "tg.",
+      "replication.policy.separator": "",
+      "offset-syncs.topic.location": "target",
+      "offset-syncs.topic.replication.factor": "1",
+      "source.cluster.bootstrap.servers": "broker:29092",
+      "target.cluster.bootstrap.servers": "broker2:29092",
+      "sync.topic.acls":"false",
+      "offset.lag.max":0
+    }
+  }
