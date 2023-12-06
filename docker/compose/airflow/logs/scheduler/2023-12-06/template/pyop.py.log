@@ -1,0 +1,95 @@
+[2023-12-06T09:46:12.132+0000] {processor.py:157} INFO - Started process (PID=1127) to work on /opt/airflow/dags/template/pyop.py
+[2023-12-06T09:46:12.134+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/template/pyop.py for tasks to queue
+[2023-12-06T09:46:12.136+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:46:12.136+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/template/pyop.py
+[2023-12-06T09:46:12.150+0000] {processor.py:839} INFO - DAG(s) dict_keys(['simple_python_operator_dag']) retrieved from /opt/airflow/dags/template/pyop.py
+[2023-12-06T09:46:12.384+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:46:12.383+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-12-06T09:46:12.395+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:46:12.394+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-12-06T09:46:12.403+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:46:12.402+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-12-06T09:46:12.404+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:46:12.404+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-06T09:46:12.422+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:46:12.422+0000] {dag.py:2963} INFO - Creating ORM DAG for simple_python_operator_dag
+[2023-12-06T09:46:12.432+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:46:12.432+0000] {dag.py:3722} INFO - Setting next_dagrun for simple_python_operator_dag to 2023-12-01T00:00:00+00:00, run_after=2023-12-02T00:00:00+00:00
+[2023-12-06T09:46:12.447+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/pyop.py took 0.318 seconds
+[2023-12-06T09:46:39.684+0000] {processor.py:157} INFO - Started process (PID=1184) to work on /opt/airflow/dags/template/pyop.py
+[2023-12-06T09:46:39.685+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/template/pyop.py for tasks to queue
+[2023-12-06T09:46:39.688+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:46:39.688+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/template/pyop.py
+[2023-12-06T09:46:39.699+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:46:39.698+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/template/pyop.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/template/pyop.py", line 3, in <module>
+    from airflow.operators.python.PythonOperator import PythonOperator
+ModuleNotFoundError: No module named 'airflow.operators.python.PythonOperator'; 'airflow.operators.python' is not a package
+[2023-12-06T09:46:39.700+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/template/pyop.py
+[2023-12-06T09:46:39.719+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/pyop.py took 0.039 seconds
+[2023-12-06T09:47:10.113+0000] {processor.py:157} INFO - Started process (PID=1240) to work on /opt/airflow/dags/template/pyop.py
+[2023-12-06T09:47:10.115+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/template/pyop.py for tasks to queue
+[2023-12-06T09:47:10.118+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:47:10.117+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/template/pyop.py
+[2023-12-06T09:47:10.126+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:47:10.124+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/template/pyop.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/template/pyop.py", line 3, in <module>
+    from airflow.operators.python.PythonOperator import PythonOperator
+ModuleNotFoundError: No module named 'airflow.operators.python.PythonOperator'; 'airflow.operators.python' is not a package
+[2023-12-06T09:47:10.127+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/template/pyop.py
+[2023-12-06T09:47:10.146+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/pyop.py took 0.037 seconds
+[2023-12-06T09:47:40.258+0000] {processor.py:157} INFO - Started process (PID=1296) to work on /opt/airflow/dags/template/pyop.py
+[2023-12-06T09:47:40.259+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/template/pyop.py for tasks to queue
+[2023-12-06T09:47:40.260+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:47:40.260+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/template/pyop.py
+[2023-12-06T09:47:40.267+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:47:40.265+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/template/pyop.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/template/pyop.py", line 3, in <module>
+    from airflow.operators.python.PythonOperator import PythonOperator
+ModuleNotFoundError: No module named 'airflow.operators.python.PythonOperator'; 'airflow.operators.python' is not a package
+[2023-12-06T09:47:40.268+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/template/pyop.py
+[2023-12-06T09:47:40.286+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/pyop.py took 0.032 seconds
+[2023-12-06T09:48:09.404+0000] {processor.py:157} INFO - Started process (PID=1347) to work on /opt/airflow/dags/template/pyop.py
+[2023-12-06T09:48:09.405+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/template/pyop.py for tasks to queue
+[2023-12-06T09:48:09.407+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:48:09.406+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/template/pyop.py
+[2023-12-06T09:48:09.419+0000] {processor.py:839} INFO - DAG(s) dict_keys(['simple_python_operator_dag']) retrieved from /opt/airflow/dags/template/pyop.py
+[2023-12-06T09:48:09.636+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:48:09.636+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-06T09:48:09.656+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:48:09.656+0000] {dag.py:3722} INFO - Setting next_dagrun for simple_python_operator_dag to 2023-12-01T00:00:00+00:00, run_after=2023-12-02T00:00:00+00:00
+[2023-12-06T09:48:09.675+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/pyop.py took 0.275 seconds
+[2023-12-06T09:48:39.781+0000] {processor.py:157} INFO - Started process (PID=1409) to work on /opt/airflow/dags/template/pyop.py
+[2023-12-06T09:48:39.783+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/template/pyop.py for tasks to queue
+[2023-12-06T09:48:39.785+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:48:39.785+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/template/pyop.py
+[2023-12-06T09:48:39.796+0000] {processor.py:839} INFO - DAG(s) dict_keys(['simple_python_operator_dag']) retrieved from /opt/airflow/dags/template/pyop.py
+[2023-12-06T09:48:39.817+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:48:39.817+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-06T09:48:39.976+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:48:39.976+0000] {dag.py:3722} INFO - Setting next_dagrun for simple_python_operator_dag to 2023-12-06T00:00:00+00:00, run_after=2023-12-07T00:00:00+00:00
+[2023-12-06T09:48:39.996+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/pyop.py took 0.219 seconds
+[2023-12-06T09:49:10.448+0000] {processor.py:157} INFO - Started process (PID=1465) to work on /opt/airflow/dags/template/pyop.py
+[2023-12-06T09:49:10.451+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/template/pyop.py for tasks to queue
+[2023-12-06T09:49:10.452+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:49:10.452+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/template/pyop.py
+[2023-12-06T09:49:10.463+0000] {processor.py:839} INFO - DAG(s) dict_keys(['simple_python_operator_dag']) retrieved from /opt/airflow/dags/template/pyop.py
+[2023-12-06T09:49:10.485+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:49:10.485+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-06T09:49:10.509+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:49:10.509+0000] {dag.py:3722} INFO - Setting next_dagrun for simple_python_operator_dag to 2023-12-06T00:00:00+00:00, run_after=2023-12-07T00:00:00+00:00
+[2023-12-06T09:49:10.657+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/pyop.py took 0.214 seconds
+[2023-12-06T09:49:40.705+0000] {processor.py:157} INFO - Started process (PID=1521) to work on /opt/airflow/dags/template/pyop.py
+[2023-12-06T09:49:40.707+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/template/pyop.py for tasks to queue
+[2023-12-06T09:49:40.708+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:49:40.708+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/template/pyop.py
+[2023-12-06T09:49:40.719+0000] {processor.py:839} INFO - DAG(s) dict_keys(['simple_python_operator_dag']) retrieved from /opt/airflow/dags/template/pyop.py
+[2023-12-06T09:49:40.741+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:49:40.741+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-06T09:49:40.766+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:49:40.765+0000] {dag.py:3722} INFO - Setting next_dagrun for simple_python_operator_dag to 2023-12-06T00:00:00+00:00, run_after=2023-12-07T00:00:00+00:00
+[2023-12-06T09:49:40.784+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/pyop.py took 0.084 seconds
+[2023-12-06T09:50:10.981+0000] {processor.py:157} INFO - Started process (PID=1577) to work on /opt/airflow/dags/template/pyop.py
+[2023-12-06T09:50:10.983+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/template/pyop.py for tasks to queue
+[2023-12-06T09:50:10.984+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:50:10.984+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/template/pyop.py
+[2023-12-06T09:50:10.995+0000] {processor.py:839} INFO - DAG(s) dict_keys(['simple_python_operator_dag']) retrieved from /opt/airflow/dags/template/pyop.py
+[2023-12-06T09:50:11.017+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:50:11.017+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-06T09:50:11.040+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:50:11.040+0000] {dag.py:3722} INFO - Setting next_dagrun for simple_python_operator_dag to 2023-12-06T00:00:00+00:00, run_after=2023-12-07T00:00:00+00:00
+[2023-12-06T09:50:11.058+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/pyop.py took 0.081 seconds
+[2023-12-06T09:50:41.783+0000] {processor.py:157} INFO - Started process (PID=1632) to work on /opt/airflow/dags/template/pyop.py
+[2023-12-06T09:50:41.786+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/template/pyop.py for tasks to queue
+[2023-12-06T09:50:41.787+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:50:41.787+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/template/pyop.py
+[2023-12-06T09:50:41.798+0000] {processor.py:839} INFO - DAG(s) dict_keys(['simple_python_operator_dag']) retrieved from /opt/airflow/dags/template/pyop.py
+[2023-12-06T09:50:41.821+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:50:41.820+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-06T09:50:41.981+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:50:41.981+0000] {dag.py:3722} INFO - Setting next_dagrun for simple_python_operator_dag to 2023-12-06T00:00:00+00:00, run_after=2023-12-07T00:00:00+00:00
+[2023-12-06T09:50:42.001+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/pyop.py took 0.222 seconds

@@ -1,0 +1,372 @@
+[2023-12-06T09:36:12.928+0000] {processor.py:157} INFO - Started process (PID=45) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:36:12.931+0000] {processor.py:829} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py for tasks to queue
+[2023-12-06T09:36:12.938+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:12.938+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:36:12.973+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dataset_produces_1', 'dataset_consumes_1', 'dataset_produces_2', 'dataset_consumes_unknown_never_scheduled', 'dataset_consumes_1_and_2', 'dataset_consumes_1_never_scheduled']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:36:13.172+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:13.172+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-12-06T09:36:13.184+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:13.184+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-12-06T09:36:13.192+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:13.192+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-12-06T09:36:13.207+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:13.207+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-12-06T09:36:13.215+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:13.215+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-12-06T09:36:13.224+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:13.223+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-12-06T09:36:13.236+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:13.236+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-12-06T09:36:13.244+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:13.243+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-12-06T09:36:13.252+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:13.252+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-12-06T09:36:13.266+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:13.266+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-12-06T09:36:13.275+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:13.274+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-12-06T09:36:13.281+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:13.281+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-12-06T09:36:13.294+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:13.293+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-12-06T09:36:13.301+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:13.301+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-12-06T09:36:13.309+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:13.309+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-12-06T09:36:13.321+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:13.321+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-12-06T09:36:13.329+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:13.329+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-12-06T09:36:13.336+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:13.335+0000] {manager.py:499} INFO - Created Permission View: %s
+[2023-12-06T09:36:13.336+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:13.336+0000] {dag.py:2941} INFO - Sync 6 DAGs
+[2023-12-06T09:36:13.357+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:13.357+0000] {dag.py:2963} INFO - Creating ORM DAG for dataset_produces_1
+[2023-12-06T09:36:13.358+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:13.358+0000] {dag.py:2963} INFO - Creating ORM DAG for dataset_consumes_1_and_2
+[2023-12-06T09:36:13.359+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:13.359+0000] {dag.py:2963} INFO - Creating ORM DAG for dataset_consumes_1
+[2023-12-06T09:36:13.360+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:13.360+0000] {dag.py:2963} INFO - Creating ORM DAG for dataset_consumes_1_never_scheduled
+[2023-12-06T09:36:13.361+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:13.361+0000] {dag.py:2963} INFO - Creating ORM DAG for dataset_consumes_unknown_never_scheduled
+[2023-12-06T09:36:13.362+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:13.362+0000] {dag.py:2963} INFO - Creating ORM DAG for dataset_produces_2
+[2023-12-06T09:36:13.375+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:13.375+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1 to None, run_after=None
+[2023-12-06T09:36:13.407+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:13.406+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_and_2 to None, run_after=None
+[2023-12-06T09:36:13.408+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:13.408+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_never_scheduled to None, run_after=None
+[2023-12-06T09:36:13.409+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:13.409+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_unknown_never_scheduled to None, run_after=None
+[2023-12-06T09:36:13.413+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:13.413+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_1 to 2023-12-05T00:00:00+00:00, run_after=2023-12-06T00:00:00+00:00
+[2023-12-06T09:36:13.414+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:13.414+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_2 to None, run_after=None
+[2023-12-06T09:36:13.468+0000] {processor.py:179} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py took 0.551 seconds
+[2023-12-06T09:36:43.634+0000] {processor.py:157} INFO - Started process (PID=99) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:36:43.636+0000] {processor.py:829} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py for tasks to queue
+[2023-12-06T09:36:43.639+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:43.639+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:36:43.650+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dataset_consumes_unknown_never_scheduled', 'dataset_produces_2', 'dataset_consumes_1_never_scheduled', 'dataset_produces_1', 'dataset_consumes_1', 'dataset_consumes_1_and_2']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:36:43.688+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:43.687+0000] {dag.py:2941} INFO - Sync 6 DAGs
+[2023-12-06T09:36:43.710+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:43.710+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1 to None, run_after=None
+[2023-12-06T09:36:43.714+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:43.714+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_and_2 to None, run_after=None
+[2023-12-06T09:36:43.716+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:43.716+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_never_scheduled to None, run_after=None
+[2023-12-06T09:36:43.718+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:43.718+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_unknown_never_scheduled to None, run_after=None
+[2023-12-06T09:36:43.721+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:43.721+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_1 to 2023-12-05T00:00:00+00:00, run_after=2023-12-06T00:00:00+00:00
+[2023-12-06T09:36:43.723+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:36:43.722+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_2 to None, run_after=None
+[2023-12-06T09:36:43.753+0000] {processor.py:179} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py took 0.122 seconds
+[2023-12-06T09:37:13.898+0000] {processor.py:157} INFO - Started process (PID=153) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:37:13.900+0000] {processor.py:829} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py for tasks to queue
+[2023-12-06T09:37:13.903+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:37:13.903+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:37:13.915+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dataset_consumes_1_and_2', 'dataset_consumes_1', 'dataset_produces_1', 'dataset_consumes_unknown_never_scheduled', 'dataset_consumes_1_never_scheduled', 'dataset_produces_2']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:37:13.951+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:37:13.951+0000] {dag.py:2941} INFO - Sync 6 DAGs
+[2023-12-06T09:37:13.976+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:37:13.976+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1 to None, run_after=None
+[2023-12-06T09:37:13.981+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:37:13.981+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_and_2 to None, run_after=None
+[2023-12-06T09:37:13.983+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:37:13.982+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_never_scheduled to None, run_after=None
+[2023-12-06T09:37:13.984+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:37:13.984+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_unknown_never_scheduled to None, run_after=None
+[2023-12-06T09:37:13.987+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:37:13.987+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_1 to 2023-12-05T00:00:00+00:00, run_after=2023-12-06T00:00:00+00:00
+[2023-12-06T09:37:13.989+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:37:13.989+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_2 to None, run_after=None
+[2023-12-06T09:37:14.022+0000] {processor.py:179} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py took 0.128 seconds
+[2023-12-06T09:37:44.640+0000] {processor.py:157} INFO - Started process (PID=207) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:37:44.641+0000] {processor.py:829} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py for tasks to queue
+[2023-12-06T09:37:44.645+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:37:44.644+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:37:44.656+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dataset_consumes_unknown_never_scheduled', 'dataset_produces_2', 'dataset_produces_1', 'dataset_consumes_1_and_2', 'dataset_consumes_1', 'dataset_consumes_1_never_scheduled']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:37:44.689+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:37:44.689+0000] {dag.py:2941} INFO - Sync 6 DAGs
+[2023-12-06T09:37:44.712+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:37:44.711+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1 to None, run_after=None
+[2023-12-06T09:37:44.715+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:37:44.715+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_and_2 to None, run_after=None
+[2023-12-06T09:37:44.717+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:37:44.717+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_never_scheduled to None, run_after=None
+[2023-12-06T09:37:44.718+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:37:44.718+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_unknown_never_scheduled to None, run_after=None
+[2023-12-06T09:37:44.721+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:37:44.721+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_1 to 2023-12-05T00:00:00+00:00, run_after=2023-12-06T00:00:00+00:00
+[2023-12-06T09:37:44.723+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:37:44.723+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_2 to None, run_after=None
+[2023-12-06T09:37:44.752+0000] {processor.py:179} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py took 0.116 seconds
+[2023-12-06T09:38:15.467+0000] {processor.py:157} INFO - Started process (PID=261) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:38:15.468+0000] {processor.py:829} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py for tasks to queue
+[2023-12-06T09:38:15.471+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:38:15.471+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:38:15.481+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dataset_produces_2', 'dataset_consumes_1', 'dataset_consumes_1_and_2', 'dataset_consumes_unknown_never_scheduled', 'dataset_consumes_1_never_scheduled', 'dataset_produces_1']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:38:15.517+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:38:15.516+0000] {dag.py:2941} INFO - Sync 6 DAGs
+[2023-12-06T09:38:15.539+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:38:15.539+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1 to None, run_after=None
+[2023-12-06T09:38:15.542+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:38:15.542+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_and_2 to None, run_after=None
+[2023-12-06T09:38:15.544+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:38:15.544+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_never_scheduled to None, run_after=None
+[2023-12-06T09:38:15.545+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:38:15.545+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_unknown_never_scheduled to None, run_after=None
+[2023-12-06T09:38:15.548+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:38:15.548+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_1 to 2023-12-05T00:00:00+00:00, run_after=2023-12-06T00:00:00+00:00
+[2023-12-06T09:38:15.550+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:38:15.550+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_2 to None, run_after=None
+[2023-12-06T09:38:15.579+0000] {processor.py:179} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py took 0.116 seconds
+[2023-12-06T09:38:46.392+0000] {processor.py:157} INFO - Started process (PID=316) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:38:46.394+0000] {processor.py:829} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py for tasks to queue
+[2023-12-06T09:38:46.397+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:38:46.396+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:38:46.407+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dataset_consumes_1', 'dataset_produces_1', 'dataset_consumes_1_and_2', 'dataset_produces_2', 'dataset_consumes_unknown_never_scheduled', 'dataset_consumes_1_never_scheduled']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:38:46.445+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:38:46.445+0000] {dag.py:2941} INFO - Sync 6 DAGs
+[2023-12-06T09:38:46.471+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:38:46.471+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1 to None, run_after=None
+[2023-12-06T09:38:46.475+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:38:46.475+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_and_2 to None, run_after=None
+[2023-12-06T09:38:46.477+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:38:46.477+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_never_scheduled to None, run_after=None
+[2023-12-06T09:38:46.479+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:38:46.478+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_unknown_never_scheduled to None, run_after=None
+[2023-12-06T09:38:46.482+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:38:46.482+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_1 to 2023-12-05T00:00:00+00:00, run_after=2023-12-06T00:00:00+00:00
+[2023-12-06T09:38:46.484+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:38:46.484+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_2 to None, run_after=None
+[2023-12-06T09:38:46.514+0000] {processor.py:179} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py took 0.126 seconds
+[2023-12-06T09:39:17.519+0000] {processor.py:157} INFO - Started process (PID=370) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:39:17.520+0000] {processor.py:829} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py for tasks to queue
+[2023-12-06T09:39:17.522+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:39:17.522+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:39:17.533+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dataset_produces_1', 'dataset_consumes_1_and_2', 'dataset_consumes_1', 'dataset_produces_2', 'dataset_consumes_unknown_never_scheduled', 'dataset_consumes_1_never_scheduled']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:39:17.567+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:39:17.567+0000] {dag.py:2941} INFO - Sync 6 DAGs
+[2023-12-06T09:39:17.590+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:39:17.590+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1 to None, run_after=None
+[2023-12-06T09:39:17.595+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:39:17.594+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_and_2 to None, run_after=None
+[2023-12-06T09:39:17.596+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:39:17.596+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_never_scheduled to None, run_after=None
+[2023-12-06T09:39:17.597+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:39:17.597+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_unknown_never_scheduled to None, run_after=None
+[2023-12-06T09:39:17.601+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:39:17.601+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_1 to 2023-12-05T00:00:00+00:00, run_after=2023-12-06T00:00:00+00:00
+[2023-12-06T09:39:17.602+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:39:17.602+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_2 to None, run_after=None
+[2023-12-06T09:39:17.631+0000] {processor.py:179} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py took 0.116 seconds
+[2023-12-06T09:39:47.669+0000] {processor.py:157} INFO - Started process (PID=424) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:39:47.670+0000] {processor.py:829} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py for tasks to queue
+[2023-12-06T09:39:47.673+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:39:47.673+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:39:47.683+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dataset_produces_2', 'dataset_consumes_1', 'dataset_consumes_1_never_scheduled', 'dataset_produces_1', 'dataset_consumes_1_and_2', 'dataset_consumes_unknown_never_scheduled']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:39:47.719+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:39:47.719+0000] {dag.py:2941} INFO - Sync 6 DAGs
+[2023-12-06T09:39:47.743+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:39:47.743+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1 to None, run_after=None
+[2023-12-06T09:39:47.748+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:39:47.748+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_and_2 to None, run_after=None
+[2023-12-06T09:39:47.749+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:39:47.749+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_never_scheduled to None, run_after=None
+[2023-12-06T09:39:47.751+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:39:47.751+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_unknown_never_scheduled to None, run_after=None
+[2023-12-06T09:39:47.754+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:39:47.754+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_1 to 2023-12-05T00:00:00+00:00, run_after=2023-12-06T00:00:00+00:00
+[2023-12-06T09:39:47.756+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:39:47.755+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_2 to None, run_after=None
+[2023-12-06T09:39:47.786+0000] {processor.py:179} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py took 0.121 seconds
+[2023-12-06T09:40:18.005+0000] {processor.py:157} INFO - Started process (PID=479) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:40:18.007+0000] {processor.py:829} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py for tasks to queue
+[2023-12-06T09:40:18.013+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:40:18.012+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:40:18.033+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dataset_consumes_unknown_never_scheduled', 'dataset_produces_1', 'dataset_produces_2', 'dataset_consumes_1_never_scheduled', 'dataset_consumes_1_and_2', 'dataset_consumes_1']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:40:18.080+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:40:18.080+0000] {dag.py:2941} INFO - Sync 6 DAGs
+[2023-12-06T09:40:18.106+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:40:18.105+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1 to None, run_after=None
+[2023-12-06T09:40:18.110+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:40:18.110+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_and_2 to None, run_after=None
+[2023-12-06T09:40:18.112+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:40:18.112+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_never_scheduled to None, run_after=None
+[2023-12-06T09:40:18.115+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:40:18.115+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_unknown_never_scheduled to None, run_after=None
+[2023-12-06T09:40:18.121+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:40:18.121+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_1 to 2023-12-05T00:00:00+00:00, run_after=2023-12-06T00:00:00+00:00
+[2023-12-06T09:40:18.127+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:40:18.126+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_2 to None, run_after=None
+[2023-12-06T09:40:18.174+0000] {processor.py:179} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py took 0.175 seconds
+[2023-12-06T09:40:48.250+0000] {processor.py:157} INFO - Started process (PID=533) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:40:48.251+0000] {processor.py:829} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py for tasks to queue
+[2023-12-06T09:40:48.254+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:40:48.254+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:40:48.264+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dataset_produces_2', 'dataset_consumes_1', 'dataset_consumes_unknown_never_scheduled', 'dataset_consumes_1_and_2', 'dataset_produces_1', 'dataset_consumes_1_never_scheduled']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:40:48.300+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:40:48.299+0000] {dag.py:2941} INFO - Sync 6 DAGs
+[2023-12-06T09:40:48.323+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:40:48.323+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1 to None, run_after=None
+[2023-12-06T09:40:48.327+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:40:48.327+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_and_2 to None, run_after=None
+[2023-12-06T09:40:48.329+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:40:48.328+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_never_scheduled to None, run_after=None
+[2023-12-06T09:40:48.330+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:40:48.330+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_unknown_never_scheduled to None, run_after=None
+[2023-12-06T09:40:48.333+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:40:48.333+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_1 to 2023-12-05T00:00:00+00:00, run_after=2023-12-06T00:00:00+00:00
+[2023-12-06T09:40:48.335+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:40:48.335+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_2 to None, run_after=None
+[2023-12-06T09:40:48.363+0000] {processor.py:179} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py took 0.117 seconds
+[2023-12-06T09:41:18.433+0000] {processor.py:157} INFO - Started process (PID=587) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:41:18.435+0000] {processor.py:829} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py for tasks to queue
+[2023-12-06T09:41:18.438+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:41:18.438+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:41:18.451+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dataset_produces_2', 'dataset_consumes_unknown_never_scheduled', 'dataset_consumes_1_never_scheduled', 'dataset_consumes_1_and_2', 'dataset_consumes_1', 'dataset_produces_1']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:41:18.496+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:41:18.496+0000] {dag.py:2941} INFO - Sync 6 DAGs
+[2023-12-06T09:41:18.527+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:41:18.527+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1 to None, run_after=None
+[2023-12-06T09:41:18.531+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:41:18.531+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_and_2 to None, run_after=None
+[2023-12-06T09:41:18.533+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:41:18.533+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_never_scheduled to None, run_after=None
+[2023-12-06T09:41:18.535+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:41:18.535+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_unknown_never_scheduled to None, run_after=None
+[2023-12-06T09:41:18.538+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:41:18.538+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_1 to 2023-12-05T00:00:00+00:00, run_after=2023-12-06T00:00:00+00:00
+[2023-12-06T09:41:18.540+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:41:18.540+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_2 to None, run_after=None
+[2023-12-06T09:41:18.569+0000] {processor.py:179} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py took 0.141 seconds
+[2023-12-06T09:41:48.956+0000] {processor.py:157} INFO - Started process (PID=641) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:41:48.958+0000] {processor.py:829} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py for tasks to queue
+[2023-12-06T09:41:48.961+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:41:48.960+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:41:48.972+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dataset_produces_1', 'dataset_consumes_1_never_scheduled', 'dataset_consumes_unknown_never_scheduled', 'dataset_produces_2', 'dataset_consumes_1_and_2', 'dataset_consumes_1']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:41:49.010+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:41:49.010+0000] {dag.py:2941} INFO - Sync 6 DAGs
+[2023-12-06T09:41:49.035+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:41:49.035+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1 to None, run_after=None
+[2023-12-06T09:41:49.039+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:41:49.039+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_and_2 to None, run_after=None
+[2023-12-06T09:41:49.041+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:41:49.041+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_never_scheduled to None, run_after=None
+[2023-12-06T09:41:49.042+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:41:49.042+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_unknown_never_scheduled to None, run_after=None
+[2023-12-06T09:41:49.045+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:41:49.045+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_1 to 2023-12-05T00:00:00+00:00, run_after=2023-12-06T00:00:00+00:00
+[2023-12-06T09:41:49.047+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:41:49.047+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_2 to None, run_after=None
+[2023-12-06T09:41:49.076+0000] {processor.py:179} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py took 0.124 seconds
+[2023-12-06T09:42:19.160+0000] {processor.py:157} INFO - Started process (PID=695) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:42:19.161+0000] {processor.py:829} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py for tasks to queue
+[2023-12-06T09:42:19.164+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:42:19.164+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:42:19.174+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dataset_consumes_unknown_never_scheduled', 'dataset_consumes_1_and_2', 'dataset_produces_2', 'dataset_consumes_1', 'dataset_consumes_1_never_scheduled', 'dataset_produces_1']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:42:19.209+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:42:19.209+0000] {dag.py:2941} INFO - Sync 6 DAGs
+[2023-12-06T09:42:19.232+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:42:19.232+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1 to None, run_after=None
+[2023-12-06T09:42:19.236+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:42:19.236+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_and_2 to None, run_after=None
+[2023-12-06T09:42:19.237+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:42:19.237+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_never_scheduled to None, run_after=None
+[2023-12-06T09:42:19.239+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:42:19.239+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_unknown_never_scheduled to None, run_after=None
+[2023-12-06T09:42:19.242+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:42:19.242+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_1 to 2023-12-05T00:00:00+00:00, run_after=2023-12-06T00:00:00+00:00
+[2023-12-06T09:42:19.243+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:42:19.243+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_2 to None, run_after=None
+[2023-12-06T09:42:19.269+0000] {processor.py:179} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py took 0.113 seconds
+[2023-12-06T09:42:49.672+0000] {processor.py:157} INFO - Started process (PID=749) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:42:49.674+0000] {processor.py:829} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py for tasks to queue
+[2023-12-06T09:42:49.676+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:42:49.676+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:42:49.687+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dataset_produces_2', 'dataset_consumes_1', 'dataset_consumes_unknown_never_scheduled', 'dataset_produces_1', 'dataset_consumes_1_and_2', 'dataset_consumes_1_never_scheduled']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:42:49.723+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:42:49.722+0000] {dag.py:2941} INFO - Sync 6 DAGs
+[2023-12-06T09:42:49.749+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:42:49.748+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1 to None, run_after=None
+[2023-12-06T09:42:49.753+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:42:49.753+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_and_2 to None, run_after=None
+[2023-12-06T09:42:49.755+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:42:49.755+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_never_scheduled to None, run_after=None
+[2023-12-06T09:42:49.757+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:42:49.756+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_unknown_never_scheduled to None, run_after=None
+[2023-12-06T09:42:49.760+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:42:49.760+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_1 to 2023-12-05T00:00:00+00:00, run_after=2023-12-06T00:00:00+00:00
+[2023-12-06T09:42:49.762+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:42:49.762+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_2 to None, run_after=None
+[2023-12-06T09:42:49.791+0000] {processor.py:179} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py took 0.123 seconds
+[2023-12-06T09:43:19.866+0000] {processor.py:157} INFO - Started process (PID=804) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:43:19.868+0000] {processor.py:829} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py for tasks to queue
+[2023-12-06T09:43:19.871+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:43:19.870+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:43:19.882+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dataset_consumes_1_and_2', 'dataset_produces_1', 'dataset_consumes_unknown_never_scheduled', 'dataset_consumes_1', 'dataset_produces_2', 'dataset_consumes_1_never_scheduled']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:43:19.923+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:43:19.922+0000] {dag.py:2941} INFO - Sync 6 DAGs
+[2023-12-06T09:43:19.952+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:43:19.951+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1 to None, run_after=None
+[2023-12-06T09:43:19.955+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:43:19.955+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_and_2 to None, run_after=None
+[2023-12-06T09:43:19.957+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:43:19.957+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_never_scheduled to None, run_after=None
+[2023-12-06T09:43:19.958+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:43:19.958+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_unknown_never_scheduled to None, run_after=None
+[2023-12-06T09:43:19.961+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:43:19.961+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_1 to 2023-12-05T00:00:00+00:00, run_after=2023-12-06T00:00:00+00:00
+[2023-12-06T09:43:19.963+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:43:19.963+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_2 to None, run_after=None
+[2023-12-06T09:43:19.993+0000] {processor.py:179} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py took 0.130 seconds
+[2023-12-06T09:43:50.929+0000] {processor.py:157} INFO - Started process (PID=858) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:43:50.931+0000] {processor.py:829} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py for tasks to queue
+[2023-12-06T09:43:50.934+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:43:50.933+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:43:50.945+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dataset_produces_1', 'dataset_consumes_unknown_never_scheduled', 'dataset_consumes_1_never_scheduled', 'dataset_consumes_1_and_2', 'dataset_produces_2', 'dataset_consumes_1']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:43:50.982+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:43:50.982+0000] {dag.py:2941} INFO - Sync 6 DAGs
+[2023-12-06T09:43:51.007+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:43:51.007+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1 to None, run_after=None
+[2023-12-06T09:43:51.012+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:43:51.012+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_and_2 to None, run_after=None
+[2023-12-06T09:43:51.014+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:43:51.013+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_never_scheduled to None, run_after=None
+[2023-12-06T09:43:51.015+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:43:51.015+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_unknown_never_scheduled to None, run_after=None
+[2023-12-06T09:43:51.020+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:43:51.019+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_1 to 2023-12-05T00:00:00+00:00, run_after=2023-12-06T00:00:00+00:00
+[2023-12-06T09:43:51.022+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:43:51.021+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_2 to None, run_after=None
+[2023-12-06T09:43:51.054+0000] {processor.py:179} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py took 0.129 seconds
+[2023-12-06T09:44:21.084+0000] {processor.py:157} INFO - Started process (PID=912) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:44:21.085+0000] {processor.py:829} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py for tasks to queue
+[2023-12-06T09:44:21.088+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:44:21.088+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:44:21.098+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dataset_produces_2', 'dataset_consumes_1_never_scheduled', 'dataset_produces_1', 'dataset_consumes_1_and_2', 'dataset_consumes_unknown_never_scheduled', 'dataset_consumes_1']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:44:21.138+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:44:21.137+0000] {dag.py:2941} INFO - Sync 6 DAGs
+[2023-12-06T09:44:21.162+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:44:21.161+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1 to None, run_after=None
+[2023-12-06T09:44:21.166+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:44:21.166+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_and_2 to None, run_after=None
+[2023-12-06T09:44:21.168+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:44:21.168+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_never_scheduled to None, run_after=None
+[2023-12-06T09:44:21.170+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:44:21.170+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_unknown_never_scheduled to None, run_after=None
+[2023-12-06T09:44:21.175+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:44:21.174+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_1 to 2023-12-05T00:00:00+00:00, run_after=2023-12-06T00:00:00+00:00
+[2023-12-06T09:44:21.178+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:44:21.178+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_2 to None, run_after=None
+[2023-12-06T09:44:21.210+0000] {processor.py:179} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py took 0.130 seconds
+[2023-12-06T09:44:51.345+0000] {processor.py:157} INFO - Started process (PID=967) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:44:51.346+0000] {processor.py:829} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py for tasks to queue
+[2023-12-06T09:44:51.350+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:44:51.349+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:44:51.360+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dataset_produces_1', 'dataset_consumes_unknown_never_scheduled', 'dataset_produces_2', 'dataset_consumes_1_and_2', 'dataset_consumes_1', 'dataset_consumes_1_never_scheduled']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:44:51.399+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:44:51.398+0000] {dag.py:2941} INFO - Sync 6 DAGs
+[2023-12-06T09:44:51.428+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:44:51.427+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1 to None, run_after=None
+[2023-12-06T09:44:51.432+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:44:51.431+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_and_2 to None, run_after=None
+[2023-12-06T09:44:51.433+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:44:51.433+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_never_scheduled to None, run_after=None
+[2023-12-06T09:44:51.435+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:44:51.434+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_unknown_never_scheduled to None, run_after=None
+[2023-12-06T09:44:51.438+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:44:51.438+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_1 to 2023-12-05T00:00:00+00:00, run_after=2023-12-06T00:00:00+00:00
+[2023-12-06T09:44:51.439+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:44:51.439+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_2 to None, run_after=None
+[2023-12-06T09:44:51.468+0000] {processor.py:179} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py took 0.127 seconds
+[2023-12-06T09:45:21.564+0000] {processor.py:157} INFO - Started process (PID=1021) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:45:21.566+0000] {processor.py:829} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py for tasks to queue
+[2023-12-06T09:45:21.569+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:45:21.568+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:45:21.579+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dataset_consumes_1_never_scheduled', 'dataset_consumes_unknown_never_scheduled', 'dataset_produces_1', 'dataset_produces_2', 'dataset_consumes_1', 'dataset_consumes_1_and_2']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:45:21.615+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:45:21.615+0000] {dag.py:2941} INFO - Sync 6 DAGs
+[2023-12-06T09:45:21.638+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:45:21.638+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1 to None, run_after=None
+[2023-12-06T09:45:21.642+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:45:21.642+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_and_2 to None, run_after=None
+[2023-12-06T09:45:21.644+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:45:21.644+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_never_scheduled to None, run_after=None
+[2023-12-06T09:45:21.645+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:45:21.645+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_unknown_never_scheduled to None, run_after=None
+[2023-12-06T09:45:21.648+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:45:21.648+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_1 to 2023-12-05T00:00:00+00:00, run_after=2023-12-06T00:00:00+00:00
+[2023-12-06T09:45:21.650+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:45:21.650+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_2 to None, run_after=None
+[2023-12-06T09:45:21.679+0000] {processor.py:179} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py took 0.119 seconds
+[2023-12-06T09:45:51.767+0000] {processor.py:157} INFO - Started process (PID=1086) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:45:51.769+0000] {processor.py:829} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py for tasks to queue
+[2023-12-06T09:45:51.772+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:45:51.771+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:45:51.782+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dataset_consumes_1', 'dataset_consumes_1_never_scheduled', 'dataset_produces_1', 'dataset_produces_2', 'dataset_consumes_1_and_2', 'dataset_consumes_unknown_never_scheduled']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:45:51.818+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:45:51.818+0000] {dag.py:2941} INFO - Sync 6 DAGs
+[2023-12-06T09:45:51.842+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:45:51.842+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1 to None, run_after=None
+[2023-12-06T09:45:51.846+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:45:51.845+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_and_2 to None, run_after=None
+[2023-12-06T09:45:51.847+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:45:51.847+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_never_scheduled to None, run_after=None
+[2023-12-06T09:45:51.849+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:45:51.848+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_unknown_never_scheduled to None, run_after=None
+[2023-12-06T09:45:51.852+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:45:51.852+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_1 to 2023-12-05T00:00:00+00:00, run_after=2023-12-06T00:00:00+00:00
+[2023-12-06T09:45:51.853+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:45:51.853+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_2 to None, run_after=None
+[2023-12-06T09:45:51.884+0000] {processor.py:179} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py took 0.121 seconds
+[2023-12-06T09:46:21.965+0000] {processor.py:157} INFO - Started process (PID=1143) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:46:21.966+0000] {processor.py:829} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py for tasks to queue
+[2023-12-06T09:46:21.969+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:46:21.969+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:46:21.980+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dataset_produces_1', 'dataset_produces_2', 'dataset_consumes_1', 'dataset_consumes_1_and_2', 'dataset_consumes_unknown_never_scheduled', 'dataset_consumes_1_never_scheduled']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:46:22.017+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:46:22.016+0000] {dag.py:2941} INFO - Sync 6 DAGs
+[2023-12-06T09:46:22.042+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:46:22.041+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1 to None, run_after=None
+[2023-12-06T09:46:22.046+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:46:22.046+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_and_2 to None, run_after=None
+[2023-12-06T09:46:22.048+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:46:22.048+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_never_scheduled to None, run_after=None
+[2023-12-06T09:46:22.050+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:46:22.049+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_unknown_never_scheduled to None, run_after=None
+[2023-12-06T09:46:22.053+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:46:22.053+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_1 to 2023-12-05T00:00:00+00:00, run_after=2023-12-06T00:00:00+00:00
+[2023-12-06T09:46:22.055+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:46:22.055+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_2 to None, run_after=None
+[2023-12-06T09:46:22.215+0000] {processor.py:179} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py took 0.254 seconds
+[2023-12-06T09:46:52.692+0000] {processor.py:157} INFO - Started process (PID=1199) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:46:52.694+0000] {processor.py:829} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py for tasks to queue
+[2023-12-06T09:46:52.697+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:46:52.696+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:46:52.707+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dataset_consumes_1_and_2', 'dataset_produces_2', 'dataset_produces_1', 'dataset_consumes_1', 'dataset_consumes_unknown_never_scheduled', 'dataset_consumes_1_never_scheduled']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:46:52.744+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:46:52.744+0000] {dag.py:2941} INFO - Sync 6 DAGs
+[2023-12-06T09:46:52.767+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:46:52.767+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1 to None, run_after=None
+[2023-12-06T09:46:52.771+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:46:52.771+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_and_2 to None, run_after=None
+[2023-12-06T09:46:52.773+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:46:52.772+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_never_scheduled to None, run_after=None
+[2023-12-06T09:46:52.774+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:46:52.774+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_unknown_never_scheduled to None, run_after=None
+[2023-12-06T09:46:52.778+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:46:52.778+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_1 to 2023-12-05T00:00:00+00:00, run_after=2023-12-06T00:00:00+00:00
+[2023-12-06T09:46:52.779+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:46:52.779+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_2 to None, run_after=None
+[2023-12-06T09:46:52.812+0000] {processor.py:179} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py took 0.124 seconds
+[2023-12-06T09:47:22.929+0000] {processor.py:157} INFO - Started process (PID=1254) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:47:22.931+0000] {processor.py:829} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py for tasks to queue
+[2023-12-06T09:47:22.933+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:47:22.933+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:47:22.945+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dataset_consumes_1_and_2', 'dataset_produces_2', 'dataset_produces_1', 'dataset_consumes_1', 'dataset_consumes_unknown_never_scheduled', 'dataset_consumes_1_never_scheduled']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:47:22.982+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:47:22.982+0000] {dag.py:2941} INFO - Sync 6 DAGs
+[2023-12-06T09:47:23.006+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:47:23.005+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1 to None, run_after=None
+[2023-12-06T09:47:23.009+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:47:23.009+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_and_2 to None, run_after=None
+[2023-12-06T09:47:23.011+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:47:23.011+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_never_scheduled to None, run_after=None
+[2023-12-06T09:47:23.012+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:47:23.012+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_unknown_never_scheduled to None, run_after=None
+[2023-12-06T09:47:23.016+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:47:23.016+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_1 to 2023-12-05T00:00:00+00:00, run_after=2023-12-06T00:00:00+00:00
+[2023-12-06T09:47:23.018+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:47:23.018+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_2 to None, run_after=None
+[2023-12-06T09:47:23.048+0000] {processor.py:179} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py took 0.123 seconds
+[2023-12-06T09:47:54.014+0000] {processor.py:157} INFO - Started process (PID=1312) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:47:54.015+0000] {processor.py:829} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py for tasks to queue
+[2023-12-06T09:47:54.017+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:47:54.016+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:47:54.028+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dataset_consumes_1_and_2', 'dataset_consumes_unknown_never_scheduled', 'dataset_produces_2', 'dataset_consumes_1_never_scheduled', 'dataset_produces_1', 'dataset_consumes_1']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:47:54.072+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:47:54.072+0000] {dag.py:2941} INFO - Sync 6 DAGs
+[2023-12-06T09:47:54.241+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:47:54.241+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1 to None, run_after=None
+[2023-12-06T09:47:54.248+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:47:54.248+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_and_2 to None, run_after=None
+[2023-12-06T09:47:54.251+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:47:54.251+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_never_scheduled to None, run_after=None
+[2023-12-06T09:47:54.253+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:47:54.253+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_unknown_never_scheduled to None, run_after=None
+[2023-12-06T09:47:54.258+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:47:54.258+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_1 to 2023-12-05T00:00:00+00:00, run_after=2023-12-06T00:00:00+00:00
+[2023-12-06T09:47:54.261+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:47:54.260+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_2 to None, run_after=None
+[2023-12-06T09:47:54.301+0000] {processor.py:179} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py took 0.292 seconds
+[2023-12-06T09:48:24.890+0000] {processor.py:157} INFO - Started process (PID=1373) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:48:24.896+0000] {processor.py:829} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py for tasks to queue
+[2023-12-06T09:48:24.898+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:48:24.898+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:48:24.917+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dataset_consumes_1_never_scheduled', 'dataset_consumes_1', 'dataset_consumes_1_and_2', 'dataset_consumes_unknown_never_scheduled', 'dataset_produces_2', 'dataset_produces_1']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:48:24.993+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:48:24.993+0000] {dag.py:2941} INFO - Sync 6 DAGs
+[2023-12-06T09:48:25.049+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:48:25.049+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1 to None, run_after=None
+[2023-12-06T09:48:25.057+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:48:25.057+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_and_2 to None, run_after=None
+[2023-12-06T09:48:25.060+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:48:25.060+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_never_scheduled to None, run_after=None
+[2023-12-06T09:48:25.062+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:48:25.062+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_unknown_never_scheduled to None, run_after=None
+[2023-12-06T09:48:25.069+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:48:25.068+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_1 to 2023-12-05T00:00:00+00:00, run_after=2023-12-06T00:00:00+00:00
+[2023-12-06T09:48:25.071+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:48:25.071+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_2 to None, run_after=None
+[2023-12-06T09:48:25.437+0000] {processor.py:179} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py took 0.556 seconds
+[2023-12-06T09:48:55.565+0000] {processor.py:157} INFO - Started process (PID=1429) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:48:55.566+0000] {processor.py:829} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py for tasks to queue
+[2023-12-06T09:48:55.568+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:48:55.567+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:48:55.579+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dataset_consumes_1_never_scheduled', 'dataset_consumes_unknown_never_scheduled', 'dataset_produces_2', 'dataset_consumes_1', 'dataset_produces_1', 'dataset_consumes_1_and_2']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:48:55.616+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:48:55.616+0000] {dag.py:2941} INFO - Sync 6 DAGs
+[2023-12-06T09:48:55.640+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:48:55.640+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1 to None, run_after=None
+[2023-12-06T09:48:55.644+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:48:55.644+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_and_2 to None, run_after=None
+[2023-12-06T09:48:55.646+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:48:55.646+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_never_scheduled to None, run_after=None
+[2023-12-06T09:48:55.647+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:48:55.647+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_unknown_never_scheduled to None, run_after=None
+[2023-12-06T09:48:55.651+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:48:55.651+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_1 to 2023-12-05T00:00:00+00:00, run_after=2023-12-06T00:00:00+00:00
+[2023-12-06T09:48:55.652+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:48:55.652+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_2 to None, run_after=None
+[2023-12-06T09:48:55.683+0000] {processor.py:179} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py took 0.122 seconds
+[2023-12-06T09:49:26.663+0000] {processor.py:157} INFO - Started process (PID=1485) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:49:26.664+0000] {processor.py:829} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py for tasks to queue
+[2023-12-06T09:49:26.666+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:49:26.665+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:49:26.680+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dataset_consumes_unknown_never_scheduled', 'dataset_produces_2', 'dataset_consumes_1', 'dataset_consumes_1_never_scheduled', 'dataset_consumes_1_and_2', 'dataset_produces_1']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:49:26.722+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:49:26.721+0000] {dag.py:2941} INFO - Sync 6 DAGs
+[2023-12-06T09:49:26.750+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:49:26.750+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1 to None, run_after=None
+[2023-12-06T09:49:26.767+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:49:26.767+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_and_2 to None, run_after=None
+[2023-12-06T09:49:26.770+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:49:26.770+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_never_scheduled to None, run_after=None
+[2023-12-06T09:49:26.772+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:49:26.772+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_unknown_never_scheduled to None, run_after=None
+[2023-12-06T09:49:26.776+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:49:26.776+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_1 to 2023-12-05T00:00:00+00:00, run_after=2023-12-06T00:00:00+00:00
+[2023-12-06T09:49:26.778+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:49:26.778+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_2 to None, run_after=None
+[2023-12-06T09:49:26.815+0000] {processor.py:179} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py took 0.156 seconds
+[2023-12-06T09:49:57.006+0000] {processor.py:157} INFO - Started process (PID=1541) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:49:57.007+0000] {processor.py:829} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py for tasks to queue
+[2023-12-06T09:49:57.009+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:49:57.008+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:49:57.021+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dataset_produces_2', 'dataset_produces_1', 'dataset_consumes_unknown_never_scheduled', 'dataset_consumes_1_never_scheduled', 'dataset_consumes_1', 'dataset_consumes_1_and_2']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:49:57.065+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:49:57.065+0000] {dag.py:2941} INFO - Sync 6 DAGs
+[2023-12-06T09:49:57.230+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:49:57.229+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1 to None, run_after=None
+[2023-12-06T09:49:57.237+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:49:57.236+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_and_2 to None, run_after=None
+[2023-12-06T09:49:57.239+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:49:57.239+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_never_scheduled to None, run_after=None
+[2023-12-06T09:49:57.241+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:49:57.241+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_unknown_never_scheduled to None, run_after=None
+[2023-12-06T09:49:57.245+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:49:57.245+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_1 to 2023-12-05T00:00:00+00:00, run_after=2023-12-06T00:00:00+00:00
+[2023-12-06T09:49:57.247+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:49:57.247+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_2 to None, run_after=None
+[2023-12-06T09:49:57.274+0000] {processor.py:179} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py took 0.273 seconds
+[2023-12-06T09:50:27.355+0000] {processor.py:157} INFO - Started process (PID=1597) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:50:27.356+0000] {processor.py:829} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py for tasks to queue
+[2023-12-06T09:50:27.357+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:50:27.357+0000] {dagbag.py:536} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:50:27.368+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dataset_consumes_unknown_never_scheduled', 'dataset_produces_2', 'dataset_consumes_1_never_scheduled', 'dataset_consumes_1_and_2', 'dataset_consumes_1', 'dataset_produces_1']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py
+[2023-12-06T09:50:27.408+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:50:27.408+0000] {dag.py:2941} INFO - Sync 6 DAGs
+[2023-12-06T09:50:27.433+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:50:27.433+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1 to None, run_after=None
+[2023-12-06T09:50:27.438+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:50:27.438+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_and_2 to None, run_after=None
+[2023-12-06T09:50:27.440+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:50:27.440+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_never_scheduled to None, run_after=None
+[2023-12-06T09:50:27.441+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:50:27.441+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_unknown_never_scheduled to None, run_after=None
+[2023-12-06T09:50:27.445+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:50:27.445+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_1 to 2023-12-05T00:00:00+00:00, run_after=2023-12-06T00:00:00+00:00
+[2023-12-06T09:50:27.447+0000] {logging_mixin.py:154} INFO - [2023-12-06T09:50:27.447+0000] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_2 to None, run_after=None
+[2023-12-06T09:50:27.621+0000] {processor.py:179} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_datasets.py took 0.270 seconds
