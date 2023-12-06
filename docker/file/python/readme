@@ -1,0 +1,5 @@
+docker build -t my-python-app .
+
+docker run -v $(pwd)/scripts:/app/scripts -it my-python-app /bin/bash
+
+python3 scripts/test.py 
