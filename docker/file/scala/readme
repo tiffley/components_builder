@@ -1,0 +1,17 @@
+docker build -t my-scala-app .
+
+docker run -v $(pwd)/scripts/src/main/scala:/app/src/main/scala -it my-scala-app /bin/bash
+
+-v: mount the dir as volume
+
+sbt run
+sbt compile
+
+ERROR
+xxx is already defined as object xxx
+
+# Create an executable JAR
+RUN jar cf test.jar xx.class
+
+# Execute the compiled JAR file
+CMD ["java", "-jar", "xx.jar"]
